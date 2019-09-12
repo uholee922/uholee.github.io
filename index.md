@@ -2,7 +2,7 @@
 layout: frontpage
 ---
 
-## Welcome to my website
+## *Welcome to U-Ho's wiki blog.*
 
-This is the place where I share my ideas on topics like [Paracraft](http://www.paracraft.cn) software design, artificial intelligence and education. 
-Feel free to send me emails or join our team. 
+This page is for logging my works or Q/As so that I can remind myself and reuse them later.
+Feel free to comment on my posts with any opinions.
