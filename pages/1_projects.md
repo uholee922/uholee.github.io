@@ -4,71 +4,37 @@ title: Projects
 comments: true
 permalink: /projects/
 ---
-
 * content
 {:toc}
 
-# All my projects
-Following are projects started by me. 
+## 1. [Cloudike SaaS/On-premise](https://www.cloudike.kr)
 
-## NPL project
-* Started: 2004-present
-* Website: [www.nplproject.com](http://www.nplproject.com)
-   * NPL Code Wiki
-   * NPL language service and debugger
+Cloudike(B2B용 클라우드 스토리지 서비스) 서비스의 백엔드 프로그래밍 및 서버 관리.
 
-NPL(Neural Parallel Language) is a new programming language. It was started as my exploration of coding logics in a networked environment.    
-Throughout the years, I have written over a million lines of code with it. All my other projects since 2005 is written in it. 
- 
+### 1.1. 서버 시스템 관리
 
-## Paracraft
-* Started: 2012-present
-* Website: [www.paracraft.cn](http://www.paracraft.cn)
-   * [ParacraftSDK](https://github.com/LiXizhi/ParaCraftSDK)
-   * Self Learning College
+* 서버 모니터링 및 장애 대처.
+* 모니터링 시스템 구축.
 
-Paracraft is a standalone 3d animation software for everyone. 
-It was my exploration of CAD(computer aided design) using the vision brain (i.e. your right brain).
-Paracraft is an extensible tool that everyone can learn to create videos and computer programs.
-I am using it to promote NPL language in self learning college to teach students programming.  
+### 1.2. 스토리지 서비스의 부가 기능 API 구현
 
+![Untitled Diagram (2)](https://user-images.githubusercontent.com/54487021/66366439-5da15d80-e9cb-11e9-8655-9d6c0ef4bc8b.png)
 
-## ParaEngine
-* Started: 2005-present
-* Website: [www.paraengine.com](http://www.paraengine.com)
-   * ParaEngine Developer Site (PEDN)
-   * MCML: a markup language to create GUI
-    
-ParaEngine is a 3d distributed game engine I wrote with C++/NPL. It has become the low-level code framework for all my other projects since 2005. 
+S3, Openstack swift storage 등 스토리지 서비스의 RESTFUL-API를 이용하여 클라우드 스토리지 서비스 제공 및 클라우드 스토리지 서비스의 편의성 기능 구현.
 
-## Magic Haqi
-* Started: 2009-2014 (still operating)
-* Website: [haqi.61.com](http://haqi.61.com)
-   * user forum
-   * user videos
+* 외부 뷰어 서비스의 RESTFUL_API를 이용한 Autocad, HWP 프리뷰 API 구현.
+* 사용자 권한 관리(접속 디바이스 제한, 다운로드 또는 업로드 제한, 접속 IP 제한 등), 사용자 로그 메일링 기능, 공유 폴더 부가 기능 등의 API 구현
+* 미디어 파일 변환 오픈소스를 이용한 파일 프리뷰 및 썸네일 파일 생성의 worker task 버그 픽스.
+* 파일에 대한 코멘트, 버전 관리 등 이용자 편의 시스템 버그 픽스.
 
-Magic Haqi is a free/paid 3D MMORPG published by taomee in November, 2009, allowing kids to play, create and share 3d worlds. It has over 5 million registered users and tens of thousands of user created works in China. The software is developed and owned by the developers of Paracraft, but has nothing to do with Paracraft. The initial version of paracraft was developed as a module in Magic Haqi. We have valid contract with its publisher taomee for their use of paracraft and its source code. 
+### 1.3. 서비스 관련 스크립트 작성
 
+배치 프로세싱 작업에 필요한 리눅스 쉘 스크립트 및 Python, Javascript 언어의 스크립트 작성.
 
-## Magic Haqi2
-* Started: 2012-2013 (still operating)
-* Website: [haqi2.61.com](http://www.61.com/haqi2/home.html)
+### 1.4. 결제 시스템 관리
 
-Same as Magic haqi. 
+결제 대행 서비스의 REST-API를 통해 결제를 진행 후 데이터베이스 업데이트 후 유저에게 서비스 제공. 버그 픽스를 담당.
 
-## ParaWorld
-* Started: 2007-2008
-* Website: closed
+### 1.5. 서비스 관리자 편의 시스템 구축
 
-It used to be hosted on www.pala5.cn. It is a community based world creation game. We did not manage to make it to the public, and closed the project. 
-
-## Kids Movie Creator
-* Started: 2006-2007
-* Website: [download link](http://kids-movie-creator.software.informer.com/)
-
-Kids Movie Creator is a very old shareware released in 2006, allowing kids to create 3d world and make movies. 
-
-## Before 2005
-* Started: 1989-2005 (very old ones)
-* [Xizhi's old website before 2005](/oldsite2005/projects.htm). 
-
+통계 metric 생성 cron job 개발 구현 및 metric 가시화 등의 작업을 담당.
