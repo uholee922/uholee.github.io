@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script>
+    function sendQuery(){
+      const xmlHttp = new XMLHttpRequest();
+      const url = "https://api.dialogflow.com/v1/query?v=20150910";
+      xmlHttp.open("POST", url, false );
+      xmlHttp.setRequestHeader('Authorization', 'Bearer 7a481de312944704b931b0f19878e18f');
+      xmlHttp.onreadystatechange = function () {
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+          document.getElementsByName('answer')[0].value = JSON.parse(xmlHttp.response).result.fulfillment.speech;
+        }
+      }
+      params = {
+        "lang": "ko",
+        "query": document.getElementsByName('question')[0].value,
+        "sessionId": "12345"
+      };
+      xmlHttp.send(JSON.stringify(params));
+    }
+  </script>
+</head>
+<body>
+  <p> 질문:
+    <input name="question" placeholder="할인쿠폰은 어떻게 써요?" rows="1" cols="80">
+    <button onClick="sendQuery()">질문</button>
+  </p>
+  <p> 답변:
+    <textarea name="answer" rows="15" cols="80" disabled></textarea>
+  </p>
+</body>
+</html>
