@@ -126,6 +126,8 @@ done
 
 ## 6. 테스트 화면
 
+(이 포스트 맨 위에서 직접 테스트하실 수 있습니다.) <button onclick="document.body.scrollTop = 0; document.documentElement.scrollTop = 0;"> 맨 위로 가기 </button>
+
 ![Screenshot from 2019-10-18 03-36-00](https://user-images.githubusercontent.com/54487021/67041958-c1f9b500-f161-11e9-9c08-41e28ac6c664.png)
 ![Screenshot from 2019-10-18 03-36-22](https://user-images.githubusercontent.com/54487021/67041993-d63db200-f161-11e9-8372-79b82ff03b62.png)
 ![Screenshot from 2019-10-18 03-37-21](https://user-images.githubusercontent.com/54487021/67042101-1bfa7a80-f162-11e9-953b-2e7f055fd89f.png)
