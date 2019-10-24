@@ -10,6 +10,7 @@
       xmlHttp.setRequestHeader('Authorization', 'Bearer 7a481de312944704b931b0f19878e18f');
       xmlHttp.onreadystatechange = function () {
         if(xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+          alert(JSON.parse(xmlHttp.response).result.fulfillment.speech);
           document.getElementsByName('answer')[0].value = JSON.parse(xmlHttp.response).result.fulfillment.speech;
         }
       }
@@ -23,17 +24,10 @@
   </script>
 </head>
 <body>
-  <h2>위메프 고객센터 챗봇 프로토타입</h2>
-  <p> 질문:
-    <input name="question" placeholder="할인쿠폰은 어떻게 써요?" rows="1" cols="80">
-    <button onClick="sendQuery()">질문</button>
-  </p>
-  <p style="color:gray">
-    ex) 할인쿠폰은 어떻게 써요, 배송이 안 와요, 이메일을 바꾸려는데요
-  </p>
-  <p> 답변:
-    <textarea name="answer" rows="15" cols="80" disabled></textarea>
-  </p>
-  <p style="color:gray">FAQ 데이터를 통해 학습된 챗봇이어서, 아쉽게도 이 챗봇은 FAQ에 있는 내용만 답변할 수 있습니다.</p>
+  질문:
+  <input name="question" placeholder="할인쿠폰은 어떻게 써요?" rows="1" cols="80">
+  <button onClick="sendQuery()">질문</button>
+  <p style="color:gray">ex) 할인쿠폰은 어떻게 써요, 배송이 안 와요, 이메일을 바꾸려는데요</p>
+  <p style="color:red; font-size:12px">FAQ 데이터를 통해 학습된 챗봇이어서, 아쉽게도 이 챗봇은 FAQ에 있는 내용만 답변할 수 있습니다.</p>
 </body>
 </html>
