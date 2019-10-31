@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "위메프 고객센터 챗봇 프로토타입"
+title: "위메프 고객센터 챗봇 프로토타입(위메프 지원용)"
 data: 2019-10-18
 categories: etc
-comments: true
 ---
 
 
